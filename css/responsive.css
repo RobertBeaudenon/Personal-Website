@@ -4,6 +4,7 @@
 
 @media (min-width: 1200px) {
 	/* ok */
+
 }
 
 /* Medium Devices (Medium Desktops & Landscape Tablets) */
@@ -25,6 +26,9 @@
 	}
 } 
 
+
+
+
 /* Small Devices (Small Desktops & Portraits Tablets) */
 @media (min-width: 768px) and (max-width: 991px){
 	 
@@ -44,6 +48,7 @@
 	.vesco-nav-wrapper {
 		padding: 0;
 	}
+
 
 	/* about section - remove diagonal border */
 
@@ -66,6 +71,9 @@
 
 }  
 
+
+
+
 /* X-small Devices (Phones) */
 @media (max-width: 767px){
 	/* mobile-menu */
@@ -79,6 +87,26 @@
 	.navbar-nav {
 
 		float: left;
+	}
+	
+    /* projects */
+	#witwit:hover img{
+	
+		cursor: pointer;
+		
+		
+		box-shadow: 0 0 16px balck;
+	
+	
+	}
+	.img-box:hover img{
+		
+		cursor: pointer;
+		filter:blur(2px);
+		
+		box-shadow: 0 0 16px balck;
+	
+	
 	}
 
 	
@@ -143,7 +171,18 @@
 	#footer-copyrights {
 		text-align: center;
 	}
+
+	#inner-box img{
+	    margin-top: 20px;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 100%;
+	  
 }
+}
+
+
 
 /* X-small Devices (Phones) */
 @media (max-width: 480px){
@@ -175,7 +214,40 @@
 	#about .content-title-underline {
 		margin: 0 auto 30px auto;
 	}
-}  
+  
+
+
+	 /* projects */
+	 .img-box {
+
+
+		display: inline-block;
+		width: 300px;
+	   
+		margin: 20px;
+		z-index: 1;
+		position: relative;
+	}
+
+	#witwit {
+
+
+		display: inline-block;
+		width: 300px;
+		margin: 20px;
+		z-index: 1;
+		position: relative;
+	}
+
+	#inner-box img{
+	    margin-top: 20px;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 100%;
+	  
+}
+}
 
 /* X-small Devices (Phones) */
 @media (max-width: 320px){
@@ -222,6 +294,39 @@
 	.testimonial img {
 		max-width: 80px;
 	}
+
+		 /* projects */
+		 .img-box {
+
+
+			display: inline-block;
+			width: 200px;
+		   
+			margin: 20px;
+			z-index: 1;
+			position: relative;
+		}
+	
+		#witwit {
+	
+	
+			display: inline-block;
+			width: 200px;
+			margin: 20px;
+			z-index: 1;
+			position: relative;
+		}
+
+
+		#inner-box img{
+			margin-top: 20px;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			width: 100%;
+		  
+	}
+	
 
 
 

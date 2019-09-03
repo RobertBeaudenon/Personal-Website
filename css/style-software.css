@@ -32,12 +32,22 @@ h3 {
 
 #home {
 	height: 100%; 
+
 }
+/*
+#home-cover {
+
+    height: 100%;
+	background-color: #000;
+	z-index: -1;  
+
+}
+*/
 
 #home-cover {
 
     height: 100%;
-	background-image: url("../img/bg-software.jpg");  
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/bg-soft.jpg");  
 
 }
 
@@ -636,3 +646,31 @@ form .form-control {
 	text-align: center;
 	width:100%;
 }
+
+
+/* video background */
+
+#videoBG {
+	position: relative;
+	z-index: 1;
+	
+	padding-left: 0.5%;
+	padding-top: 7.5%;
+	width: 100%;
+	height: 100%;
+	
+}
+/*
+@media(min-aspect-ratio: 16/9){
+	#videoBG {
+		width: 100%;
+		height: auto;
+	}
+}
+
+@media(max-aspect-ratio: 16/9){
+	#videoBG {
+		width: auto;
+		height: 100%;
+	}
+}*/
