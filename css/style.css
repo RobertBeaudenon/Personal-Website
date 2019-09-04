@@ -146,8 +146,11 @@ h3 {
 
 #home-btn {
 	animation-delay: 1s;
+	margin: 100px 0 0 0;
       
 }
+
+
 
 .btn-back-to-top {
 	position:fixed;
