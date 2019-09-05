@@ -44,7 +44,7 @@ h3 {
 }
 */
 
-#home-cover {
+#home-cover-software {
 
     height: 100%;
 	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/bg-soft.jpg");  
@@ -125,12 +125,12 @@ h3 {
 
 /* animate */
 
-#home-cover, #home-heading, #home-btn {
+#home-cover-software, #home-heading, #home-btn {
 	animation-duration: .5s;
 
 }
 
-#home-cover {
+#home-cover-software {
 	animation-delay: .1s;
       
 }
@@ -530,14 +530,13 @@ form .form-control {
 	transition: .3s;
 	border-width: 3px;
 	border-color: #000;
-	border-style: solid;
+	border-style: dashed;
 }
 
 
 #witwit:hover img{
 	
 	cursor: pointer;
-	
 	transform:scale(1.1);
 	box-shadow: 0 0 16px balck;
 
@@ -675,3 +674,26 @@ form .form-control {
 		height: 100%;
 	}
 }*/
+
+/* icons */
+
+.icon:hover {
+	color: #34c6d3;
+}
+
+/*display*/
+#Architecture {
+	display: none;
+}
+
+#CI {
+	display: none;
+}
+
+#Infra{
+	display: none;
+}
+
+#SA {
+	display: none;
+}

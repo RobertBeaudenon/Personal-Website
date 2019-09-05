@@ -9,7 +9,7 @@
 
 	<title>Robert Beaudenon | Software</title>
 
-		<!--favicon: icon close to title-->
+	<!--favicon: icon close to title-->
 	<link rel="shortcut icon" href="img/R.png">
 
 	<!--googlem fonts-->
@@ -17,6 +17,8 @@
 
 	<!-- font awesome-->
 	<link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+	<script src="https://kit.fontawesome.com/9245c5ab1c.js"></script>
+
 
 	<!-- bootstrap CSS-->
 	<link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
@@ -91,11 +93,17 @@
 
 	<section id="home">
       
-			<div id="home-cover" class="bg-parallax animated fadeIn">
+			<div id="home-cover-software" class="bg-parallax animated fadeIn">
 	  
 				  <div id="home-content-box" class="text-center">
 	  
 					  <div id="home-content-box-inner">
+
+							<div id="home-heading" class="animated zoomIn">
+						
+									<h3>.</h3>
+								</div>
+			
 							
 						<div id="home-btn" class="animated zoomIn">
 						   
@@ -134,7 +142,7 @@
        			
        			     <div class="img-box wow animated  zoomIn" data-wow-duration="1.5s" data-wow-delay="1s">
        						<a class="smooth-scroll" href="#restaurentAppOverview">
-       							<img src="img/project1.png">
+       							<img src="img/project2.png" alt="Restaurant App">
        						</a>
        					
        					
@@ -146,7 +154,7 @@
        		
        			     <div class="wow animated  zoomIn" id="witwit" data-wow-duration="1.5s" data-wow-delay="1s">
        						<a  class="smooth-scroll" href="#SOEN341">
-       							<img src="img/witwit.png">
+       							<img src="img/witwit.png" alt="WitWit">
        						</a>
        					
        					
@@ -156,7 +164,7 @@
        				</div>
        		         <div class="img-box wow animated  zoomIn" data-wow-duration="1.5s" data-wow-delay="1s">
        						<a class="smooth-scroll" href="#">
-       							<img src="img/project1.png">
+       							<img src="img/project3.png" alt="Website">
        						</a>
        					
        					
@@ -192,14 +200,10 @@
 	
 							<div id="outer-box">
 								
-								<div id="inner-box">
+								<div id="inner-box" class="wow animated fadeInLeft">
      		<p>Using the Eclipse IDE, I developed in Java a fully functional Restaurant application that supports waiters in making reservations, ordering, and billing and owners in setting up menus. Following the Model-View-Controller architectural pattern, the Model code was fully generated from domain models (i.e., UML class diagrams) and UML state machines. The Controller code was implemented based on UML sequence diagrams and tested with the help of the JUnit testing framework. The View code was implemented manually based on UI specifications of the Window Builder Eclipse plugin. The contributions to the model and code base of the six team members working on the Restaurant application were managed with Git and GitHub.</p>
 
-     		<div id="home-btn" class="animated zoomIn">
-     			
-     			<a href="https://github.com/RobertBeaudenon/ECSE223_RestaurentApplication/tree/master/Group13-master" role="button"> More Details </a>
-				
-              </div>
+     	
           </div>
          </div>
        </div>
@@ -280,16 +284,28 @@
 										networking site Witwit. It is built to reflect social relation among users, that can like and
 										follow each other. This project is primarily built using front-end Angular framework, Node JS
 										for the back-end framework and MySQL as our database.</p>
-
-										<h3>Architecture and Design</h3>
+										
+										
+										<h3>Architecture and Design  <i class="fas fa-info-circle icon wow animated jello" data-wow-duration="2s" data-wow-delay=".5s"  onclick="displayArch()" ></i> </h3>
+										
+						   
+												
+								
+									
+										
+										<div id="Architecture">
 										<p>The overall architecture of the system is illustrated through a block diagram . The
 											architectural design of our project is centered around the process view and MVC pattern.</p>
 
 										
 										<img src="img/WitwitBlockDiagram.png" alt="Witwit Block Diagram" >
-										 
-										<h3>Infrastructure</h3>
-										<p>Database (MySQL):
+										
+										</div>
+
+										
+										<h3>Infrastructure  <i class="fas fa-info-circle icon wow animated jello" data-wow-duration="2s" data-wow-delay=".5s"  onclick="displayInfra()" ></i></h3>
+										<div id="Infra">
+										<p><b>Database (MySQL):</b>
 												MySQL is a relational database which means that we can connect columns in
 												different tables together and that would help us to accomplish our goal. Furthermore, MySQL
 												uses tables which means that it is more organized than documented database.
@@ -298,7 +314,7 @@
 												collections at the same. Whereas MySQL provides us with the required SQL queries to be
 												able to manipulate several tables at the same time since it is relational.</p>
 
-										<p>Express.js:
+										<p><b>Express.js:</b>
 												Express.js is a highly flexible and simple web application framework for Node.js.
 												Since we decided to use Node.js for our website’s backend implementation, we had chosen
 												this framework since we had some experience working with it and it provides all the required
@@ -307,7 +323,7 @@
 												However, Meteor.js is used for full stack development which means that we couldn’t have
 												used Angular for the frontend if we used this framework since it is used for both frontend and
 												backend.</p>
-												<p>Bootstrap:
+												<p><b>Bootstrap:</b>
 														Bootstrap is an open source front-end framework. Since we are ten people working
 														on the project, finding a way to provide consistency was essential. Bootstrap provides
 														consistency between developers by adding the same classes for a specific design. The need
@@ -316,22 +332,25 @@
 														few templates available and lack support for older versions of Internet explorer. Hence,
 														these options are less appealing than Bootstrap.</p>
 
-														<p>Angular Material:
+														<p><b>Angular Material:</b>
 																Angular material is optimized for angular this means that it works seamlessly with
 																angular.It has a lot of appealing components and themes plus it is easy to use and learn.
 																An alternative was materialize. But since materialize does not support flexbox that
 																we’re using from bootstrap, it was not the way to go. Materialize is also known to be heavy
 																and large which is inefficient and would make our website slower.</p>
-
-																<h3>Continuous Integration Environment : Travis-CI</h3>
+</div>
+																<h3>Continuous Integration Environment : Travis-CI  <i class="fas fa-info-circle icon wow animated jello" data-wow-duration="2s" data-wow-delay=".5s"  onclick="displayCI()" ></i></h3>
+																
+																<div id="CI">
 																<p>
 																		With Travis CI, the tool enables us to ensure that every time we commit a change to
 																		any branch, all test cases run. Moreover, we have two files that enable this, the .travis.yml
 																		file and various test files inside our code. Whenever Travis CI detects a commit, it will run
 																		the Travis file which will run all of our cases. The link above shows the results of all commits
 																		we have done since implementing this.</p>
-
-																		<h3>Static Analysis:</h3>
+    </div>
+																		<h3>Static Analysis:  <i class="fas fa-info-circle icon wow animated jello" data-wow-duration="2s" data-wow-delay=".5s"  onclick="displaySA()" ></i></h3>
+																		<div id="SA">
 																		<p>The static analysis tool of our choice is the Codacy automatic code reviewer platform.
 																				The tool is integrated with GitHub, therefore it can easily monitor the code quality throughout
 																				the whole repository. It is possible to use it by logging in by your github account to their
@@ -342,11 +361,8 @@
 																				style issues. Finally, Figures 2, 3 and 4 illustrates in which files these issues were found.
 																				These aren’t the only files our project contains. However, according the codacy, there wasn’t
 																				any issue after src/app/app.component.css file.</p>
-				<div id="home-btn" class="animated zoomIn">
-					
-					<a href="https://github.com/mohanadarafe/s341-witwit" role="button"> More Details </a>
-				   
-				 </div>
+																		</div>
+
 			 </div>
 			</div>
 		  </div>
@@ -407,7 +423,7 @@
 			</section>
 
 			     <!-- Restaurent application -->
-					<!-- <section id="website">
+					 <section id="website">
 						<div class="content-box">
 							<div class="content-title wow animated  fadeInDown" data-wow-duration="1s" data-wow-delay=".5s">
 												 <h3> Personal Website </h3>
@@ -427,37 +443,66 @@
 									   <div id="boxes">
 				   
 											<div class="container">
-													<div class="col-md-4">
-													<div class="box">
-														<img src="./img/html5-seeklogo.com.eps">
+													<div class="col-md-3">
+													<div class="box wow animated rubberBand" data-wow-duration="1s" data-wow-delay="1.5s" >
+															<i class="fab fa-html5 fa-5x " style="color: #e34f26 "></i>
 													 <h3>HTML5 Markup</h3>
-													 <p>qwetyuioplkjhgfdsafnm nbvcx c hg fd s </p>
+													 
 													</div>
 													</div>
-													<div class="col-md-4">
-													<div class="box">
-														<img src="./img/jquerry.png">
+													<div class="col-md-3">
+													<div class="box wow animated rubberBand" data-wow-duration="1s" data-wow-delay="1.5s">
+															<i class="fab fa-css3-alt fa-5x" style="color: orange" ></i>
 													 <h3>CSS3 Styling</h3>
-													 <p>qwetyuioplkjhgfdsafnm nbvcx c hg fd s </p>
+													
 													</div>
 											</div>
-											<div class="col-md-4">
-													<div class="box">
-														<img src="./img/Bootstrap-Logo.png">
-													 <h3>Graphic Design</h3>
-													 <p>qwetyuioplkjhgfdsafnm nbvcx c hg fd s </p>
+											<div class="col-md-3">
+													<div class="box wow animated rubberBand" data-wow-duration="1s" data-wow-delay="1.5s">
+															<i class="fab fa-bootstrap fa-5x" style="color:violet"></i>
+													 <h3>Bootstrap</h3>
+													 
 													</div>
+													</div>
+												
+
+												<div class="col-md-3 wow animated rubberBand" data-wow-duration="1s" data-wow-delay="1.5s">
+														<div class="box">
+																<i class="fab fa-js-square fa-5x" style="color: rgb(206, 206, 13)"></i>
+														 <h3>JQuerry</h3>
+														 
+														</div>
+														
 													</div>
 												</div>
-					  
+                                               
 					 </div>
 					</div>	
 				   </div>
+
+				   <div class="container">
+						<div class="row">
+							<div class="col-md-12">
+								<div id="box">
+									<div id="outer-box">
+										<div id="inner-box">
+				<p><i class="far fa-lightbulb"></i> The main idea behind creating this website is to summarize the different projects i work on during the year as well as what i like doing on my spare time.</p><br>
+				<p><i class="fa fa-code"></i> This Website was written from <b>scratch</b> by me using HTML5, CSS3, JQuery and Bootstrap.</p><br>
+				<p><i class="fas fa-drafting-compass"></i> Not being really familiar with web design, this project challenged me in many ways and helped me gain some hands on experience.</p>
+
+				</div>
+				</div>
+				</div>
+				</div>
+				</div>
+				</div>
 				  </div>
+
+				
 			   
 			   
 					   
-					</section>-->
+					</section>
 
 
 			<footer>
@@ -483,7 +528,7 @@
 										
 										<ul>
 											<li><a   href="index.html">Home</a>/</li>
-											<li><a  href="index.html #work">Work</a>/</li>
+											<li><a  href="index.html#work">Work</a>/</li>
 											<li><a   href="index.html#contact">Contact</a></li>
 										</ul>
 									</div>

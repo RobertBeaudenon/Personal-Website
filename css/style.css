@@ -129,7 +129,7 @@ h3 {
 
 /* animate */
 
-#home-cover, #home-heading, #home-btn {
+#home-cover, #home-heading, .home-btn {
 	animation-duration: .5s;
 
 }
@@ -144,7 +144,7 @@ h3 {
       
 }
 
-#home-btn {
+.home-btn {
 	animation-delay: 1s;
 	margin: 100px 0 0 0;
       

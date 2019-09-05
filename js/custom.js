@@ -108,6 +108,46 @@ $(function(){
 });
 
 
+/* Display/Hide content Software */
+
+function displayArch() {
+	var x = document.getElementById("Architecture");
+	console.log(x.style.display);
+	if (x.style.display === "none") {
+	  x.style.display = "block";
+	} else {
+	  x.style.display = "none";
+	}
+  }
+
+  function displayInfra() {
+	var x = document.getElementById("Infra");
+	if (x.style.display === "none") {
+	  x.style.display = "block";
+	} else {
+	  x.style.display = "none";
+	}
+  }
+
+  function displayCI() {
+	var x = document.getElementById("CI");
+	if (x.style.display === "none") {
+	  x.style.display = "block";
+	} else {
+	  x.style.display = "none";
+	}
+  }
+
+  function displaySA() {
+	var x = document.getElementById("SA");
+	if (x.style.display === "none") {
+	  x.style.display = "block";
+	} else {
+	  x.style.display = "none";
+	}
+  }
+
+
 
 
 

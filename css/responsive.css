@@ -179,7 +179,7 @@
 		margin-right: auto;
 		width: 100%;
 	  
-}
+    }
 }
 
 
@@ -247,6 +247,28 @@
 		width: 100%;
 	  
 }
+
+    #home-cover-software {
+
+    height: 100%;
+	background-image: url("../img/background-software-phone.JPG");  
+
+	}
+	
+  /* boxes Projects */
+
+	.img-box h3{
+		position: absolute;
+		top:45%;
+		z-index: 1;
+		color: #fff;
+		
+		text-align:center;
+		width:100%;
+		margin: 0;
+		opacity:1;
+	
+	}
 }
 
 /* X-small Devices (Phones) */
