@@ -5,10 +5,27 @@
 @media (min-width: 1200px) {
 	/* ok */
 
+	#box2{
+		float:none;
+		text-align: center;
+		width:100%;
+		margin-top: 30px;
+		padding-left: 140px;
+	}
+	
+	
+	#box3{
+		float:none;
+		text-align: center;
+		width:100%;
+		margin-top: 30px;
+		padding-right: 140px;
+	}
+
 }
 
 /* Medium Devices (Medium Desktops & Landscape Tablets) */
-@media (min-width: 992px) and (max-width: 1199px){
+@media (min-width: 991px) and (max-width: 1199px){
 
 	.navbar {
 
@@ -23,6 +40,23 @@
 	
 	.vesco-nav-wrapper {
 		padding: 0;
+	}
+
+	#box2{
+		float:none;
+		text-align: center;
+		width:100%;
+		margin-top: 30px;
+		padding-left: 150px;
+	}
+	
+	
+	#box3{
+		float:none;
+		text-align: center;
+		width:100%;
+		margin-top: 30px;
+		padding-right: 150px;
 	}
 } 
 
@@ -68,6 +102,8 @@
 	#footer-copyrights {
 		text-align: center;
 	}
+
+
 
 }  
 
