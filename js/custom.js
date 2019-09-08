@@ -148,9 +148,45 @@ function displayArch() {
   }
 
 
+  /* redirect when form submitted */
+
+  /*const myForm = document.getElementById("form");
+
+  myForm.addEventListener("submit", (e) => {
+	  e.preventDefault();
+	  
+	  const request = new XMLHttpRequest();
+
+	  request.open("post", "php/index.php");
+
+	  request.onload = function () {
+		  console.log(request.responseText);
+	  }
+
+	  request.send(new FormData(myForm));
+  });
+*/
 
 
 
+//$("form").submit(function(){
+//	alert("Your message was successfully sent to Robert.");
+
+//  });
+
+/*$(document).ready(function() {
+$("#resetForm").click(function() {
+	$("#myForm")[0].reset();
+}); 
+});*/
+
+/*function clearForms()
+{
+  var i;
+  for (i = 0; (i < document.forms.length); i++) {
+	document.forms[i].reset();
+  }
+}*/
 
 
 

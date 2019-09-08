@@ -36,10 +36,15 @@ $mail->Body    = $_POST['message'];
 //$mail->AltBody = $_POST['message'];
 
 if(!$mail->send()) {
-    echo 'Message could not be sent.';
-    echo 'Mailer Error: ' . $mail->ErrorInfo;
+	
+    ?><script>alert("Your message could not be sent to Robert. Check your internet connection or try contacting him at robertbeaudenon@gmail.com");</script>
+   <?php
 } else {
-    echo 'Message has been sent';
+  //  header('Location: ./../index.html');
+  
+   ?><script>alert("Your message was successfully sent to Robert.");</script>
+   <?php
+
 }
 }
 

@@ -38,7 +38,7 @@
 	<!-- responsive CSS-->
 	<link rel="stylesheet" href="css/responsive.css">
 </head>
-<body data-spy="scroll" data-target=".navbar-fixed-top" data-offset="65">
+<body data-spy="scroll" data-target=".navbar-fixed-top" data-offset="65" >
 
 	<header>
 		
@@ -357,17 +357,18 @@
 						<div id="contact-right">
 							
 							<h3>Contact Me</h3>
-							<form method="post" action="php/index.php"> 
+							<iframe name="redirect" style="display:none;"></iframe>
+							<form  id="myForm" method="post" action="php/index.php" target="redirect" > 
 
 								<input type="text" name="name" placeholder="Full Name" class="form-control" required>
 
 								<input type="text" name="email" placeholder="Email Address" class="form-control" required>
 
 								<textarea rows="5" name="message" placeholder="Message..." class="form-control" required></textarea>
-
+							
 								<div id="send-btn">
 									
-									<input type="submit" class="btn btn-lg btn-general btn-black"  role="button" name="SEND" value="SEND">
+									<input type="submit" id="resetForm" class="btn btn-lg btn-general btn-black"  role="button" name="SEND" value="SEND"   >
 								</div>
 							</form>
 						</div>
@@ -400,12 +401,6 @@
 								<li><a class="smooth-scroll" href="#home">Home</a>/</li>
 								<li><a class="smooth-scroll" href="#about">About</a>/</li>
 								<li><a class="smooth-scroll" href="#services">Work</a></li>
-								
-								
-								
-
-								
-
 							</ul>
 						</div>
 					</div>
@@ -417,21 +412,6 @@
 		<a href="#home" id="back-to-top" class="btn btn-sm btn-black btn-back-to-top smooth-scroll" title="home" role="button"><i class="fa fa-angle-up"></i></a>
 	</footer>
  
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 	<!-- jQuery -->
