@@ -23,6 +23,36 @@ $(function(){
 
 });
 
+
+$(function(){
+
+	$("#work2").magnificPopup({
+		 delegate: 'a', // child items selector, by clicking on it popup will open
+         type: 'image',
+         // other options
+            gallery: {
+          enabled:true
+        } 
+
+	}); 
+
+});
+
+
+$(function(){
+
+	$("#work3").magnificPopup({
+		 delegate: 'a', // child items selector, by clicking on it popup will open
+         type: 'image',
+         // other options
+            gallery: {
+          enabled:true
+        } 
+
+	}); 
+
+});
+
 /*team*/
 
 $(function(){

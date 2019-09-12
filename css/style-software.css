@@ -303,21 +303,38 @@ h4.team-member-description {
 	margin-top: 5px; 
 }
 
+
 /* social */
-.social-list {
+.social-list1 {
 	padding-left: 0;
+	
 }
 
-.social-list li { 
+.social-list2 {
+	padding-left: 0;
+
+}
+
+.social-list1 li { 
 	list-style: none;
 	display: inline-block;
-	width: 32px;
-	height: 32px;
+	width: 20px;
+	height: 17px;
 	margin-right: 6px;
 	margin-top: 10px;
 
 }
 
+
+.social-list2 li { 
+	list-style: none;
+	display: inline-block;
+	width: 20px;
+	height: 17px;
+	margin-right: 6px;
+	margin-top: 10px;
+
+}
 .social-icon i {
     font-size: 17px;
 

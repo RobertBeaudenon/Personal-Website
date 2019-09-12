@@ -18,6 +18,7 @@
 	<!-- font awesome-->
 	<link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
 	<script src="https://kit.fontawesome.com/9245c5ab1c.js"></script>
+	<link rel="stylesheet" href="https://raw.githubusercontent.com/l-lin/font-awesome-animation/master/dist/font-awesome-animation.css">
 
 
 	<!-- bootstrap CSS-->
@@ -127,7 +128,7 @@
 
 
 
-       		           <div class="content-title wow animated  fadeInDown" data-wow-duration="1s" data-wow-delay=".5s">
+       		           <div class="content-title wow animated  fadeInDown" data-wow-duration="1s" data-wow-delay=".25s">
 				                  <h3> Projects</h3>
 				
 				                   <div class="content-title-underline">
@@ -140,7 +141,7 @@
 
        		      <div id="projects">
        			
-       			     <div class="img-box wow animated  zoomIn" data-wow-duration="1.5s" data-wow-delay="1s">
+       			     <div class="img-box wow animated  zoomIn" data-wow-duration="1s" data-wow-delay=".5s">
        						<a class="smooth-scroll" href="#restaurentAppOverview">
        							<img src="img/project2.png" alt="Restaurant App">
        						</a>
@@ -152,7 +153,7 @@
        				</div>
        			
        		
-       			     <div class="wow animated  zoomIn" id="witwit" data-wow-duration="1.5s" data-wow-delay="1s">
+       			     <div class="wow animated  zoomIn" id="witwit" data-wow-duration="1s" data-wow-delay=".5s">
        						<a  class="smooth-scroll" href="#SOEN341">
        							<img src="img/witwit.png" alt="WitWit">
        						</a>
@@ -162,7 +163,7 @@
        					
 
        				</div>
-       		         <div class="img-box wow animated  zoomIn" data-wow-duration="1.5s" data-wow-delay="1s">
+       		         <div class="img-box wow animated  zoomIn" data-wow-duration="1s" data-wow-delay=".5s">
        						<a class="smooth-scroll" href="#website">
        							<img src="img/project3.png" alt="Website">
        						</a>
@@ -201,8 +202,8 @@
 							<div id="outer-box">
 								
 								<div id="inner-box" class="wow animated fadeInLeft">
-     		<p>Using the Eclipse IDE, I developed in Java a fully functional Restaurant application that supports waiters in making reservations, ordering, and billing and owners in setting up menus. Following the Model-View-Controller architectural pattern, the Model code was fully generated from domain models (i.e., UML class diagrams) and UML state machines. The Controller code was implemented based on UML sequence diagrams and tested with the help of the JUnit testing framework. The View code was implemented manually based on UI specifications of the Window Builder Eclipse plugin. The contributions to the model and code base of the six team members working on the Restaurant application were managed with Git and GitHub.</p>
-
+     		<p>Using the Eclipse IDE, I developed in <strong>java</strong> a fully functional Restaurant application that supports waiters in making reservations, ordering, and billing and owners in setting up menus. Following the <strong>Model-View-Controller </strong>architectural pattern, the Model code was fully generated from domain models (i.e.,<strong>UML class diagrams</strong>) and <strong>UML state machines</strong>. The Controller code was implemented based on <strong>UML sequence diagrams</strong> and tested with the help of the <strong>JUnit testing</strong> framework. The View code was implemented manually based on UI specifications of the Window Builder Eclipse plugin. The contributions to the model and code base of the six team members working on the Restaurant application were managed with Git and GitHub.</p>
+             <a href="#video" class="smooth-scroll" style="text-decoration: none;"><h3> Demo  <i class="fas fa-angle-double-down fa-spin wow animated jello" data-wow-duration="2s" data-wow-delay=".5s"   ></i></h3></a>
      	
           </div>
          </div>
@@ -240,7 +241,7 @@
 
                                 <div class="youtube-video-wrapper">
 
-				                <div class="video-container wow animated  bounceIn" data-wow-duration="2s" data-wow-delay="1s">
+				                <div class="video-container wow animated  bounceIn" data-wow-duration="1s" data-wow-delay=".5s">
      		                       <iframe width="560" height="315" src="https://www.youtube.com/embed/LtzPMtpO0qY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
      	                        </div>
 
@@ -280,13 +281,13 @@
 								   <div id="inner-box" class="wow animated fadeInLeft" data-wow-duration="1s" data-wow-delay=".5s">
 									   <h3>Project Summary</h3>
 
-				                     <p>The project is about designing and implementing a friendly interface of the social
-										networking site Witwit. It is built to reflect social relation among users, that can like and
-										follow each other. This project is primarily built using front-end Angular framework, Node JS
-										for the back-end framework and MySQL as our database.</p>
+				                     <p>The project is about designing and implementing a friendly interface of the <strong>social
+										networking site</strong> Witwit. It is built to reflect social relation among users, that can like and
+										follow each other. This project is primarily built using front-end <strong>Angular</strong> framework, <strong>Node JS</strong>
+										for the back-end framework and <strong>MySQL</strong> as our database.</p>
 										
 										
-										<h3>Architecture and Design  <i class="fas fa-info-circle icon wow animated jello" data-wow-duration="2s" data-wow-delay=".5s"  onclick="displayArch()" ></i> </h3>
+										<h3 onclick="displayArch()">Architecture and Design   <i class="fas fa-angle-double-down fa-spin icon wow animated jello" data-wow-duration="2s" data-wow-delay=".5s"   ></i> </h3>
 										
 						   
 												
@@ -303,7 +304,7 @@
 										</div>
 
 										
-										<h3>Infrastructure  <i class="fas fa-info-circle icon wow animated jello" data-wow-duration="2s" data-wow-delay=".5s"  onclick="displayInfra()" ></i></h3>
+										<h3 onclick="displayInfra()">Infrastructure  <i class="fas fa-angle-double-down fa-spin icon wow animated jello" data-wow-duration="2s" data-wow-delay=".5s"   ></i></h3>
 										<div id="Infra" style="display: none">
 										<p><b>Database (MySQL):</b>
 												MySQL is a relational database which means that we can connect columns in
@@ -339,29 +340,28 @@
 																we’re using from bootstrap, it was not the way to go. Materialize is also known to be heavy
 																and large which is inefficient and would make our website slower.</p>
 </div>
-																<h3>Continuous Integration Environment : Travis-CI  <i class="fas fa-info-circle icon wow animated jello" data-wow-duration="2s" data-wow-delay=".5s"  onclick="displayCI()" ></i></h3>
+																<h3 onclick="displayCI()">Continuous Integration Environment : Travis-CI  <i class="fas fa-angle-double-down fa-spin icon wow animated jello" data-wow-duration="2s" data-wow-delay=".5s"   ></i></h3>
 																
 																<div id="CI" style="display: none">
 																<p>
 																		With Travis CI, the tool enables us to ensure that every time we commit a change to
 																		any branch, all test cases run. Moreover, we have two files that enable this, the .travis.yml
 																		file and various test files inside our code. Whenever Travis CI detects a commit, it will run
-																		the Travis file which will run all of our cases. The link above shows the results of all commits
-																		we have done since implementing this.</p>
+																		the Travis file which will run all of our cases.</p>
     </div>
-																		<h3>Static Analysis:  <i class="fas fa-info-circle icon wow animated jello" data-wow-duration="2s" data-wow-delay=".5s"  onclick="displaySA()" ></i></h3>
+																		<h3 onclick="displaySA()">Static Analysis  <i class="fas fa-angle-double-down fa-spin wow animated jello" data-wow-duration="2s" data-wow-delay=".5s"   ></i></h3>
 																		<div id="SA" style="display: none">
 																		<p>The static analysis tool of our choice is the Codacy automatic code reviewer platform.
 																				The tool is integrated with GitHub, therefore it can easily monitor the code quality throughout
 																				the whole repository. It is possible to use it by logging in by your github account to their
-																				website https://www.codacy.com/ . Then, you choose one of your project and it will execute
+																				website. Then, you choose one of your project and it will execute
 																				the static analysis for it. After our code has been reviewed, the analysis tool computed and
-																				displayed the total number of issues for the entire project as shown in Figure 1. Among the
+																				displayed the total number of issues for the entire project. Among the
 																				categories of the issues, we can observe that emerging issues are error prone and coding
-																				style issues. Finally, Figures 2, 3 and 4 illustrates in which files these issues were found.
-																				These aren’t the only files our project contains. However, according the codacy, there wasn’t
-																				any issue after src/app/app.component.css file.</p>
+																				style issues. </p>
 																		</div>
+
+																	<a href="#video1" class="smooth-scroll" style="text-decoration: none;"><h3> Demo  <i class="fas fa-angle-double-down fa-spin wow animated jello" data-wow-duration="2s" data-wow-delay=".5s"   ></i></h3></a>
 
 			 </div>
 			</div>
@@ -378,7 +378,7 @@
 		<section id="restaurentAppDetails">
      	
 			</section>
-			   <section id="video">
+			   <section id="video1">
 	   
 			 <div id="video-cover">
 				<div class="content-box">
@@ -399,7 +399,7 @@
 	   
 									   <div class="youtube-video-wrapper">
 	   
-									   <div class="video-container wow animated  bounceIn" data-wow-duration="2s" data-wow-delay="1s">
+									   <div class="video-container wow animated  bounceIn" data-wow-duration="1s" data-wow-delay=".5s">
 											<iframe width="560" height="315" src="https://www.youtube.com/embed/OF5Wb_XA4m0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 										</div>
 	   
@@ -479,7 +479,7 @@
 												<div class="col-md-6 wow animated rubberBand" data-wow-duration="1s" data-wow-delay="1.5s">
 														<div class="box" id="box2">
 																<i class="fab fa-js-square fa-5x" style="color: rgb(206, 206, 13)"></i>
-														 <h3>JQuerry</h3>
+														 <h3>JQuery</h3>
 														 
 														</div>
 														
@@ -532,15 +532,33 @@
 							
 							<div class="row">
 								
-								<div class="col-md-6">
+								<div class="col-md-4">
 									
 									<div id="footer-copyrights">
 										
 										<p>Copyrights &copy; 2019 All Rights Reserved by Robert Beaudenon.</p>
 									</div>
 								</div>
+								<div class="col-md-4">
+						
+
+										<ul class="social-list1">
+													<li><a href="https://www.facebook.com/robert.beaudenon?lst=100000078992739%3A100000078992739%3A1546608636" class="social-icon icon-white" target="_blank"> <i class="fab fa-facebook-f"></i></a></li>
+				
+													<li><a href="https://www.instagram.com/robertbeaudenon/" class="social-icon icon-white"target="_blank"> <i class="fab fa-instagram"></i></a></li>
+				
+													<li><a href="https://www.linkedin.com/in/rbeaudenon-46a3b2152/" class="social-icon icon-white" target="_blank"> <i class="fab fa-linkedin-in"></i></a></li>
+				
+													<li><a href="https://www.youtube.com/channel/UCNfykCdmYWspkS9bmKjP1TA" class="social-icon icon-white" target="_blank"> <i class="fab fa-youtube"></i></a></li>
+				
+													<li><a href="https://github.com/RobertBeaudenon" class="social-icon icon-white"> <i class="fab fa-github" target="_blank"></i></a></li>
+				
+				
+												</ul>
+									
+									</div>
 								
-								<div class="col-md-6 hidden-sm hidden-xs">
+								<div class="col-md-4 hidden-sm hidden-xs">
 									
 									<div id="footer-menu">
 										
@@ -551,6 +569,8 @@
 										</ul>
 									</div>
 								</div>
+
+						
 							</div>
 						</div>
 			

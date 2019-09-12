@@ -295,6 +295,24 @@ h3 {
 	cursor: zoom-in;
 }
 
+.img-wrapper2{
+	overflow: hidden;
+
+}
+
+.img-wrapper2 img {
+	/*transition: transform .5s ease;*/
+	filter: gray; /* IE5+ */
+      -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
+      -webkit-transition: all .3s ease-in-out; 
+}
+
+.img-wrapper2 img:hover {
+	filter: none;
+      -webkit-filter: grayscale(0);
+      
+}
+
 .content-title p{
 	text-align: center;
     font-size: 20px;
@@ -331,11 +349,17 @@ h4.team-member-description {
 
 
 /* social */
-.social-list {
+.social-list1 {
 	padding-left: 0;
+	
 }
 
-.social-list li { 
+.social-list2 {
+	padding-left: 0;
+
+}
+
+.social-list1 li { 
 	list-style: none;
 	display: inline-block;
 	width: 20px;
@@ -345,6 +369,16 @@ h4.team-member-description {
 
 }
 
+
+.social-list2 li { 
+	list-style: none;
+	display: inline-block;
+	width: 20px;
+	height: 17px;
+	margin-right: 6px;
+	margin-top: 10px;
+
+}
 
 .social-icon i {
     font-size: 17px;
