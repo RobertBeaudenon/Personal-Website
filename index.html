@@ -37,6 +37,9 @@
 
 	<!-- responsive CSS-->
 	<link rel="stylesheet" href="css/responsive.css">
+   
+	<!--recaptcha v3-->
+	<script src="https://www.google.com/recaptcha/api.js?render=6Lcmb7gUAAAAAAyXn9lQED62PUZCXfZSfxQ7-129"></script>
 </head>
 <body data-spy="scroll" data-target=".navbar-fixed-top" data-offset="65" >
 
@@ -89,16 +92,22 @@
 						<h3>Hey! It's Robert.  <br>I'm a Third year Software Engineer.</h3>
 					</div>
 
+					<div class="container">
+                     <div class="row " id="home-btn-row">
+						 <div class="col-md-6" id="home-btn1">
 					<div class="home-btn  wow animated fadeInDown">
 						<a class="btn btn-lg btn-general btn-white smooth-scroll" href="#testimonials" role="button" title="About me">About me</a> 
 
 					</div>
+						 </div>
+						 <div class="col-md-6" id="home-btn2"> 
 					<div  class="home-btn wow animated fadeInUp">
 							<a class="btn btn-lg btn-general btn-white" href="img/CV_ROBERTBEAUDENON.pdf"  role="button" download="image" target="_blank"> Download CV <i class="fa fa-download"></i></a> 
 	
 					</div>
-
-
+					</div>
+				</div>
+				</div>
 				</div>
 				
 			</div>
@@ -129,7 +138,7 @@
 
 								<blockquote class="text-center ">
 									
-									<p class=" wow animated slideInUp" data-wow-duration="2s" data-wow-delay=".5s">I am a team player who contributes with passion, confidence and generosity, and know how to inspire other to do the same.</p>
+									<p class=" wow animated slideInUp" data-wow-duration="2s" data-wow-delay=".5s">I’m a third year software engineer at Concordia University, looking to expand my knowledge and experience in the tech world.</p>
 
 								</blockquote>
 							</div>
@@ -171,7 +180,7 @@
 				                </div>
 
 				                <div id="about-desc" class="wow animated fadeInDown" data-wow-duration="1s" data-wow-delay=".5s">
-				                	<p>Welcome to my personal Website! <br>I'm 21 years old and studying for a Bachelor’s Degree in Software Engineering at Concordia University in Montreal, Canada.<br>The main idea behind creating this website is to summarize the different projects I work on during the year as well as what I like doing on my spare time.</p>
+				                	<p>Welcome to my personal Website! <br>In this website, you will find a list of projects I work on during the year, as well as some of my personal photography and videography projects that I like to do in my spare time.</p>
 
 				                	
 				                </div>
@@ -317,7 +326,7 @@
 							<div id="contact-info">
 								
 								<address>
-									<strong>Headquarters</strong><br>
+									<strong>Based In</strong><br>
 
 									<p>Montreal QC Canada</p>
 								</address>
@@ -356,17 +365,20 @@
 							
 							<h3>Contact Me</h3>
 							<iframe name="redirect" style="display:none;"></iframe>
-							<form  id="myForm" method="post" action="php/index.php" target="redirect" > 
+							<form  id="myForm" method="post" action="php/index.php" target="redirect"  > 
 
 								<input type="text" name="name" placeholder="Full Name" class="form-control" required>
 
-								<input type="text" name="email" placeholder="Email Address" class="form-control" required>
-
+								<input type="text" name="email"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="Email Address"  class="form-control" required>
+								 
+								
 								<textarea rows="5" name="message" placeholder="Message..." class="form-control" required></textarea>
 							
 								<div id="send-btn">
+										<input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response">
 									
-									<input type="submit" class="btn btn-lg btn-general btn-black"  role="button" name="SEND"   >
+									<input type="submit" class="btn btn-lg btn-general btn-black"  role="button" name="SEND" value="SEND"   >
+									
 								</div>
 							</form>
 						</div>
@@ -433,5 +445,15 @@
 
 	<!-- custom JS: not located in head because we want to first render the content of the page then load the script-->
 	<script src="js/custom.js"></script>
+
+	<!--recaptcha v3-->
+	<script>
+		grecaptcha.ready(function() {
+			grecaptcha.execute('6Lcmb7gUAAAAAAyXn9lQED62PUZCXfZSfxQ7-129', {action: 'homepage'}).then(function(token) {
+			   document.getElementById('g-recaptcha-response').value =token;
+			   console.log(token);
+			});
+		});
+		</script>
 </body>
 </html>

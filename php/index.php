@@ -1,13 +1,21 @@
-
-
-
 <?php
 if(isset($_POST['SEND'])){
+   define('SECRET_KEY', '');
 	require 'PHPMailerAutoload.php';
 	require 'credentials.php';
 
+   function getCaptcha($SecretKey){
+      $Response = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=".SECRET_KEY."&response={$SecretKey}");
+      $Return =json_decode($Response);
+      return $Return;
+   }
 
-$mail = new PHPMailer;
+   $Return = getCaptcha($_POST['g-recaptcha-response']);
+   var_dump($Return);
+
+   if($Return->success == true && $Return->score > 0.5){
+
+      $mail = new PHPMailer;
 
 $mail->SMTPDebug = 1;                               // Enable verbose debug output
 
@@ -42,12 +50,23 @@ if(!$mail->send()) {
 } else {
   //  header('Location: ./../index.html');
   
-   ?><script>alert("Your message was successfully sent to Robert.");</script>
+   ?><script>
+   alert("Thank you for getting in touch! I will get Back to you very soon.");</script>
     
 
    <?php
 
 }
+
+
+   } else {
+      ?><script>alert("You are considered a robot by google recaptcha , refresh the page or send me an email.");</script>
+    
+
+      <?php
+   }
+
+
 }
 
 

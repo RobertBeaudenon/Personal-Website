@@ -149,7 +149,7 @@ h3 {
 
 .home-btn {
 	animation-delay: 1s;
-	margin: 100px 0 0 0;
+	margin: 0 0 0 0;
       
 }
 
@@ -603,6 +603,22 @@ form .form-control {
     display: block;
 }
 
+/* recaptcha */
+
+.grecaptcha-badge { 
+	transform:scale(0.6);
+	-webkit-transform:scale(0.6);
+ }
+
+ .grecaptcha-badge { 
+	bottom: 100% !important;
+	}
+
+	.rc-anchor-light { 
+		background: #000 !important; 
+		color: #000 !important;
+	
+	}
 
 
 
