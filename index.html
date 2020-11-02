@@ -39,8 +39,8 @@
 	<link rel="stylesheet" href="css/responsive.css">
    
 	<!--recaptcha v3-->
-	<script src="https://www.google.com/recaptcha/api.js?render=6Lcmb7gUAAAAAAyXn9lQED62PUZCXfZSfxQ7-129"></script>
-</head>
+	<script src="https://www.google.com/recaptcha/api.js?render=6LeSjrgUAAAAAO-6E-vRncjUbkgxqPaT5kHnoIUV"></script>
+	</head>
 <body data-spy="scroll" data-target=".navbar-fixed-top" data-offset="65" >
 
 	<header>
@@ -80,7 +80,7 @@
 	</header>
 	<!--home-->
 	<section id="home">
-      
+	
       <div id="home-cover" class="bg-parallax animated fadeIn">
 
 			<div id="home-content-box" class="text-center">
@@ -89,7 +89,7 @@
 
 					<div id="home-heading" class="animated zoomIn">
 						
-						<h3>Hey! It's Robert.  <br>I'm a Third year Software Engineer.</h3>
+						<h3>Hey! It's Robert.  <br>I'm a Third year Software Engineer</h3>
 					</div>
 
 					<div class="container">
@@ -138,7 +138,7 @@
 
 								<blockquote class="text-center ">
 									
-									<p class=" wow animated slideInUp" data-wow-duration="2s" data-wow-delay=".5s">I’m a third year software engineer at Concordia University, looking to expand my knowledge and experience in the tech world.</p>
+									<p class=" wow animated slideInUp" data-wow-duration="2s" data-wow-delay=".5s">I’m a third year software engineering student at Concordia University, looking to expand my knowledge and experience in the tech world.</p>
 
 								</blockquote>
 							</div>
@@ -180,7 +180,7 @@
 				                </div>
 
 				                <div id="about-desc" class="wow animated fadeInDown" data-wow-duration="1s" data-wow-delay=".5s">
-				                	<p>Welcome to my personal Website! <br>In this website, you will find a list of projects I work on during the year, as well as some of my personal photography and videography projects that I like to do in my spare time.</p>
+				                	<p>Welcome to my personal website! <br>Here, you will find a list of projects I've worked on, as well as some of my personal photography and videography projects.</p>
 
 				                	
 				                </div>
@@ -259,7 +259,7 @@
 							</div>
 
 							<div class="service-item-description">
-								<p>I post everything starting from my school assignments to my personal projects.</p>
+								<p>Everything I've worked on ranging from my school assignments to my personal projects.</p>
 							</div>
 
 						       </a>
@@ -283,7 +283,7 @@
 
 							        <div class="service-item-description">
 								     
-								     <p>Fasten your seatbelts and enjoy the ride.</p>
+								     <p>Fasten your seatbelt and enjoy the ride.</p>
 							
 							         </div></a></li>
 							</ul>
@@ -333,10 +333,10 @@
 
 								<div id="phone-fax-email">
 									
-									<p>
+									<address>
 									
-										<strong>Email: </strong><span>robertbeaudenon@gmail.com</span><br>
-									</p>
+										<strong>Email </strong><br><p>robertbeaudenon@gmail.com</p>
+									</address>
 								</div>
 
 							</div>
@@ -365,11 +365,11 @@
 							
 							<h3>Contact Me</h3>
 							<iframe name="redirect" style="display:none;"></iframe>
-							<form  id="myForm" method="post" action="php/index.php" target="redirect"  > 
+							<form  id="myForm" method="post" action="php/index.php" target="redirect" > 
 
 								<input type="text" name="name" placeholder="Full Name" class="form-control" required>
 
-								<input type="text" name="email"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="Email Address"  class="form-control" required>
+								<input type="text" name="email"  placeholder="Email Address"  class="form-control" required>
 								 
 								
 								<textarea rows="5" name="message" placeholder="Message..." class="form-control" required></textarea>
@@ -449,11 +449,12 @@
 	<!--recaptcha v3-->
 	<script>
 		grecaptcha.ready(function() {
-			grecaptcha.execute('6Lcmb7gUAAAAAAyXn9lQED62PUZCXfZSfxQ7-129', {action: 'homepage'}).then(function(token) {
+			grecaptcha.execute('6LeSjrgUAAAAAO-6E-vRncjUbkgxqPaT5kHnoIUV', {action: 'homepage'}).then(function(token) {
 			   document.getElementById('g-recaptcha-response').value =token;
-			   console.log(token);
+			
+			
 			});
 		});
 		</script>
-</body>
+		</body>
 </html>

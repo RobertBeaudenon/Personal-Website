@@ -3,480 +3,441 @@
 /* Large Devices (Desktops & Laptops) >1200px */
 
 @media (min-width: 1200px) {
-	/* ok */
+  /* ok */
 
-	#box2{
-		float:none;
-		text-align: center;
-		width:100%;
-		margin-top: 30px;
-		padding-left: 140px;
-	}
-	
-	
-	#box3{
-		float:none;
-		text-align: center;
-		width:100%;
-		margin-top: 30px;
-		padding-right: 140px;
-	}
+  #box2 {
+    float: none;
+    text-align: center;
+    width: 100%;
+    margin-top: 30px;
+    padding-left: 140px;
+  }
 
-	.social-list1 {
-		padding-left: 20%;
-		
-		
-	}
+  #box3 {
+    float: none;
+    text-align: center;
+    width: 100%;
+    margin-top: 30px;
+    padding-right: 140px;
+  }
 
-	#home-heading h3 {
-		color: #fff;
-		font-size: 55px;
-		font-weight: 700;
-		margin: 120px 0 20px 0;
-	}
+  .social-list1 {
+    padding-left: 20%;
+  }
 
-	#home-btn1 {
-		padding-left: 20%;
-		
-	}
+  #home-heading h3 {
+    color: #fff;
+    font-size: 55px;
+    font-weight: 700;
+    margin: 120px 0 20px 0;
+  }
 
-	#home-btn2 {
-		padding-right: 20%;
-	}
+  #home-btn1 {
+    padding-left: 20%;
+  }
 
-	#home-btn-row {
-		margin-top:5%;
-	}
+  #home-btn2 {
+    padding-right: 20%;
+  }
 
+  #home-btn-row {
+    margin-top: 5%;
+  }
 }
 
 /* Medium Devices (Medium Desktops & Landscape Tablets) */
-@media (min-width: 991px) and (max-width: 1199px){
+@media (min-width: 991px) and (max-width: 1199px) {
+  .navbar {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 0;
+  }
 
-	.navbar {
+  .navbar-nav {
+    float: left;
+  }
 
-		background: rgba(0,0,0, .7);
-		padding: 0;
-	}
+  .vesco-nav-wrapper {
+    padding: 0;
+  }
 
-	.navbar-nav {
+  #box2 {
+    float: none;
+    text-align: center;
+    width: 100%;
+    margin-top: 30px;
+    padding-left: 150px;
+  }
 
-		float: left;
-	}
-	
-	.vesco-nav-wrapper {
-		padding: 0;
-	}
+  #box3 {
+    float: none;
+    text-align: center;
+    width: 100%;
+    margin-top: 30px;
+    padding-right: 150px;
+  }
+  .social-list1 {
+    padding-left: 20%;
+  }
 
-	#box2{
-		float:none;
-		text-align: center;
-		width:100%;
-		margin-top: 30px;
-		padding-left: 150px;
-	}
-	
-	
-	#box3{
-		float:none;
-		text-align: center;
-		width:100%;
-		margin-top: 30px;
-		padding-right: 150px;
-	}
-	.social-list1 {
-		padding-left: 20%;
-		
-	}
+  #home-btn1 {
+    padding-left: 20%;
+  }
 
-	#home-btn1 {
-		padding-left: 20%;
-		
-	}
+  #home-btn2 {
+    padding-right: 20%;
+  }
 
-	#home-btn2 {
-		padding-right: 20%;
-	}
-
-	#home-btn-row {
-		margin-top:5%;
-	}
-} 
-
-
-
+  #home-btn-row {
+    margin-top: 5%;
+  }
+}
 
 /* Small Devices (Small Desktops & Portraits Tablets) */
-@media (min-width: 768px) and (max-width: 991px){
-	 
-	/* mobile-menu */
+@media (min-width: 768px) and (max-width: 991px) {
+  /* mobile-menu */
 
-	.navbar {
+  .navbar {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 0;
+  }
 
-		background: rgba(0,0,0, .7);
-		padding: 0;
-	}
+  .navbar-nav {
+    float: left;
+  }
 
-	.navbar-nav {
+  .vesco-nav-wrapper {
+    padding: 0;
+  }
 
-		float: left;
-	}
-	
-	.vesco-nav-wrapper {
-		padding: 0;
-	}
+  /* about section - remove diagonal border */
 
+  #about-bg-diagonal {
+    border-left: 0;
+    border-top: 0;
+    width: 100%;
+    height: 350px;
+  }
+  #about-content-box {
+    width: 100%;
+    height: 350px;
+  }
 
-	/* about section - remove diagonal border */
+  /* footer */
 
-	#about-bg-diagonal {
-		border-left: 0;
-		border-top: 0;
-		width: 100%;
-		height: 350px;
-	}
-	#about-content-box {
-		width: 100%;
-		height: 350px;
-	}
-	
-	/* footer */
+  #footer-copyrights {
+    text-align: center;
+  }
 
-	#footer-copyrights {
-		text-align: center;
-	}
+  .social-list1 {
+    text-align: center;
+  }
 
-	.social-list1 {
-		text-align: center;
-	}
+  #home-btn1 {
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
 
-	#home-btn1 {
-		margin-top: 10%;
-		margin-bottom: 10%;
-		
-	}
-
-
-
-}  
-
-
-
-
-/* X-small Devices (Phones) */
-@media (max-width: 767px){
-	/* mobile-menu */
-
-	.navbar {
-
-		background: rgba(0,0,0, .7);
-		padding: 0;
-	}
-	
-	.navbar-nav {
-
-		float: left;
-	}
-	
-    /* projects */
-	#witwit:hover img{
-	
-		cursor: pointer;
-		
-		
-		box-shadow: 0 0 16px balck;
-	
-	
-	}
-	.img-box:hover img{
-		
-		cursor: pointer;
-		filter:blur(2px);
-		
-		box-shadow: 0 0 16px balck;
-	
-	
-	}
-
-	
-
-	/* home */
-
-	#home-heading h3{
-		font-size: 24px;
-
-	}
-
-	/* button */
-	
-	.btn-general {
-		padding: 6px 22px 6px 22px;
-		font-size: 14px;
-	}
-
-	/* about section - remove diagonal border */
-
-	#about-bg-diagonal {
-		border-left: 0;
-		border-top: 0;
-		width: 100%;
-		height: 350px;
-	}
-	#about-content-box {
-		width: 100%;
-		height: 350px;
-	}
-
-	/* work */
-
-	.img-wrapper {
-		max-width: 100%;
-
-	}
-
-	/* testimonials */
-
-	.testimonial blockquote {
-		padding: 6px 50px;
-	}
-
-	.testimonial blockquote:before {
-		left: 10px;
-		
-	}
-
-	.testimonial blockquote:after {
-		right: 10px;
-		
-	}
-
-	.testimonial blockquote p {
-		font-size: 14px;
-		
-	}
-
-	/* footer */
-
-	#footer-copyrights {
-		text-align: center;
-	}
-
-	#inner-box img{
-	    margin-top: 20px;
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-		width: 100%;
-	  
-	}
-
-	.social-list1 {
-		text-align: center;
-	}
-
-	#home-btn1 {
-		margin-top: 10%;
-		margin-bottom: 10%;
-		
-	}
-
-	
-	
-	
-
+  .bg-parallax {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+  }
 }
 
-
-
-
 /* X-small Devices (Phones) */
-@media (max-width: 480px){
+@media (max-width: 767px) {
+  /* mobile-menu */
 
-	
-	.service-item-description p{
-		padding-left: 100px;
-	}
-	
-	.vesco-nav-wrapper {
-		padding: 0;
-	}
+  .navbar {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 0;
+  }
 
-	.service-item ul {
-		padding-inline-start: 0;
-	}
+  .navbar-nav {
+    float: left;
+  }
 
-	.align1 {
-		padding-left: 10%;
-		padding-right: 10%;
-	}
+  /* projects */
+  #witwit:hover img {
+    cursor: pointer;
 
-	#about .content-title h3{
-		text-align: center;
-		padding-top: 20px;
+    box-shadow: 0 0 16px balck;
+  }
+  .img-box:hover img {
+    cursor: pointer;
+    filter: blur(2px);
 
-	}
+    box-shadow: 0 0 16px balck;
+  }
 
-	#about .content-title-underline {
-		margin: 0 auto 30px auto;
-	}
-  
+  /* home */
 
+  #home-heading h3 {
+    font-size: 24px;
+  }
 
-	 /* projects */
-	 .img-box {
+  /* button */
 
+  .btn-general {
+    padding: 6px 22px 6px 22px;
+    font-size: 14px;
+  }
 
-		display: inline-block;
-		width: 300px;
-	   
-		margin: 20px;
-		z-index: 1;
-		position: relative;
-	}
+  /* about section - remove diagonal border */
 
-	#witwit {
+  #about-bg-diagonal {
+    border-left: 0;
+    border-top: 0;
+    width: 100%;
+    height: 350px;
+  }
+  #about-content-box {
+    width: 100%;
+    height: 350px;
+  }
 
+  /* work */
 
-		display: inline-block;
-		width: 300px;
-		margin: 20px;
-		z-index: 1;
-		position: relative;
-	}
+  .img-wrapper {
+    max-width: 100%;
+  }
 
-	#inner-box img{
-	    margin-top: 20px;
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-		width: 100%;
-	  
+  /* testimonials */
+
+  .testimonial blockquote {
+    padding: 6px 50px;
+  }
+
+  .testimonial blockquote:before {
+    left: 10px;
+  }
+
+  .testimonial blockquote:after {
+    right: 10px;
+  }
+
+  .testimonial blockquote p {
+    font-size: 14px;
+  }
+
+  /* footer */
+
+  #footer-copyrights {
+    text-align: center;
+  }
+
+  #inner-box img {
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+
+  .social-list1 {
+    text-align: center;
+  }
+
+  #home-btn1 {
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+
+  /* parralax effect */
+
+  .bg-parallax {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+  }
 }
 
-    #home-cover-software {
+/* X-small Devices (Phones) */
+@media (max-width: 480px) {
+  .service-item-description p {
+    padding-left: 100px;
+  }
 
+  .vesco-nav-wrapper {
+    padding: 0;
+  }
+
+  .service-item ul {
+    padding-inline-start: 0;
+  }
+
+  .align1 {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  #about .content-title h3 {
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  #about .content-title-underline {
+    margin: 0 auto 30px auto;
+  }
+
+  /* projects */
+  .img-box {
+    display: inline-block;
+    width: 300px;
+
+    margin: 20px;
+    z-index: 1;
+    position: relative;
+  }
+
+  #witwit {
+    display: inline-block;
+    width: 300px;
+    margin: 20px;
+    z-index: 1;
+    position: relative;
+  }
+
+  #inner-box img {
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+
+  #home-cover-software {
     height: 100%;
-	background-image: url("../img/background-software-phone.JPG");  
+    background-image: url('../img/background-software-phone.JPG');
+  }
 
-	}
-	
   /* boxes Projects */
 
-	.img-box h3{
-		position: absolute;
-		top:45%;
-		z-index: 1;
-		color: #fff;
-		
-		text-align:center;
-		width:100%;
-		margin: 0;
-		opacity:1;
-	
-	}
+  .img-box h3 {
+    position: absolute;
+    top: 45%;
+    z-index: 1;
+    color: #fff;
 
-	.social-list1 {
-		text-align: center;
-	}
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    opacity: 1;
+  }
 
-	#home-btn1 {
-		margin-top: 24%;
-		
-	}
+  .social-list1 {
+    text-align: center;
+  }
 
-	#home-btn2 {
-		margin-top: 24%;
-	}
+  #home-btn1 {
+    margin-top: 24%;
+  }
+
+  #home-btn2 {
+    margin-top: 24%;
+  }
+
+  #wrapper {
+    content: '';
+    display: block;
+    position: fixed;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    background: url('../img/bg-home2.jpg') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  #wrapperPhoto {
+    content: '';
+    display: block;
+    position: fixed;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -10;
+    background: url('../img/bg-home-photo.jpg') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
 }
 
 /* X-small Devices (Phones) */
-@media (max-width: 320px){
+@media (max-width: 320px) {
+  .vesco-nav-wrapper {
+    padding: 0;
+  }
+  .service-item-icon i {
+    width: 58px;
+    height: 58px;
+    padding: 7px;
+  }
 
-	.vesco-nav-wrapper {
-		padding: 0;
-	}
-	.service-item-icon i {
-		width: 58px;
-		height: 58px;
-		padding:7px;
-	
-	}
+  .service-item-title h3 {
+    font-size: 17px;
+  }
 
-	
+  #about-content-box {
+    margin-top: 40px;
+  }
 
-	.service-item-title h3 {
-		font-size: 17px;
+  /* testimonials */
 
-	}
+  .testimonial blockquote {
+    padding: 6px 30px;
+  }
 
-	#about-content-box {
-		margin-top: 40px;
-	}
+  .testimonial blockquote:before {
+    left: 7px;
+  }
 
-		/* testimonials */
+  .testimonial blockquote:after {
+    right: 7px;
+  }
 
-	.testimonial blockquote {
-		padding: 6px 30px;
-	}
+  .testimonial img {
+    max-width: 80px;
+  }
 
-	.testimonial blockquote:before {
-		left: 7px;
-		
-	}
+  /* projects */
+  .img-box {
+    display: inline-block;
+    width: 200px;
 
-	.testimonial blockquote:after {
-		right: 7px;
-		
-	}
+    margin: 20px;
+    z-index: 1;
+    position: relative;
+  }
 
+  #witwit {
+    display: inline-block;
+    width: 200px;
+    margin: 20px;
+    z-index: 1;
+    position: relative;
+  }
 
+  #inner-box img {
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
 
-	.testimonial img {
-		max-width: 80px;
-	}
+  #home-btn1 {
+    margin-top: 24%;
+  }
 
-		 /* projects */
-		 .img-box {
-
-
-			display: inline-block;
-			width: 200px;
-		   
-			margin: 20px;
-			z-index: 1;
-			position: relative;
-		}
-	
-		#witwit {
-	
-	
-			display: inline-block;
-			width: 200px;
-			margin: 20px;
-			z-index: 1;
-			position: relative;
-		}
-
-
-		#inner-box img{
-			margin-top: 20px;
-			display: block;
-			margin-left: auto;
-			margin-right: auto;
-			width: 100%;
-		  
-	}
-
-	#home-btn1 {
-		margin-top: 24%;
-		
-	}
-
-	#home-btn2 {
-		margin-top: 24%;
-	}
-	
-
-
-
-} 
+  #home-btn2 {
+    margin-top: 24%;
+  }
+}
